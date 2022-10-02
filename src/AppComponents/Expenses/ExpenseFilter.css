@@ -1,0 +1,39 @@
+div.filter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+h4.year{
+    display: inline-block;
+    color: whitesmoke;
+    margin-left: 3%;
+}
+select{
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 3%;
+    width: 100px;
+}
+@media only screen and (max-width:900px){
+    div.filter{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3px;
+    }
+    h4.year{
+        display: inline-block;
+        color: white;
+        font-size: small;
+        margin-left: 3%;
+    }
+    select{
+        display: inline-block;
+        padding: 3px;
+        border-radius: 5px;
+        margin-right: 2%;
+        width: 70px;
+    }
+}

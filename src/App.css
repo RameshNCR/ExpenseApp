@@ -1,0 +1,22 @@
+h1.heading{
+  background-color: orangered;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width:900px){
+  .App-header{
+    width: 100%;
+  }
+  h1.heading{
+    background-color: black;
+    margin:3px auto;
+    font-size:medium;
+    padding: 3px;
+    border-radius: 3px;
+  }
+  
+}

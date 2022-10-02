@@ -1,0 +1,16 @@
+div.container{
+    background-color: rgb(156, 1, 245);
+    border-radius: 10px;
+    padding: 10px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media only screen and (max-width:900px){
+    div.container{
+        width: 60%;
+        background-color: orangered;
+        margin: auto auto;
+        padding: 5px;
+    }
+}

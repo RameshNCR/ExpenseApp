@@ -1,0 +1,23 @@
+.date{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 5px;
+    text-align: center;
+    line-height: 4px;
+    width:100px;
+  }
+  @media only screen and (max-width:900px){
+    .date{
+      background-color: blue;
+      color: white;
+      border: 1px solid white;
+      border-radius: 3px;
+      padding: 1.5px;
+      text-align: center;
+      line-height: 1px;
+      width:90px; 
+      font-size: small;
+    }
+  }

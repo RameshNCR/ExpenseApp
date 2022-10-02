@@ -1,0 +1,48 @@
+.flex-containr{
+    border: 1px slid gray;
+    border-radius: 10px;
+    background-color: grey;
+    margin: 10px 0px;
+    padding: 10px;
+    justify-content:space-between;
+    align-items: center;
+    display: flex;
+  }
+  h3.prps{
+    color: white;
+    padding: 5px;
+    margin-right: 60%;
+  }
+  h3.Rs{
+    background-color: rgb(244, 8, 209);
+    color: white;
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 5px;
+  }
+  @media only screen and (max-width:900px){
+    .flex-containr{
+      border: 1px slid rgb(250, 107, 226);
+      border-radius: 5px;
+      background-color:rgb(250, 107, 226);
+      margin: 5px 0px;
+      padding: 5px;
+      justify-content:space-between;
+      align-items: center;
+      display: flex;
+    }
+    h3.prps{
+      color: white;
+      padding: 3px;
+      margin:auto;
+      font-size: small;
+    }
+    h3.Rs{
+      background-color: black;
+      color: white;
+      border: 1px solid white;
+      border-radius: 5px;
+      padding: 3px;
+      font-size: small;
+    }
+  }
