@@ -15,7 +15,7 @@ function ExpenseForm(props){
     }
     function Addexpepense(event){
         event.preventDefault();
-        var datas={id:Math.floor(Math.random()*1000),d:new Date(dates),p:texts,r:amounts};
+        var datas=[{id:Math.floor(Math.random()*1000),d:new Date(dates),p:texts,r:amounts}];
         props.form(datas);
         settexts('');
         setamounts('');
