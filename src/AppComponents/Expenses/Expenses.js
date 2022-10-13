@@ -6,25 +6,18 @@ import "./Expenses.css"
 function Expenses(props){
     let user=props.user1;
     let filterExpense
-    let [details,setdetails]=useState(1);
-    const[value1,setvalue1]=useState("2004");
+    const[value1,setvalue1]=useState("selectyear");
     function year(details){
         setvalue1(details)
     }
-    function filterbtn(){
-        setdetails(2);
-    }
-    function filtercancel(){
-        setdetails(1);
-    }
-    (details===1) ? filterExpense=user :
+    (value1==="selectyear") ? filterExpense=user :
     filterExpense=user.filter((user)=>{
         return(user.d.getFullYear().toString()===value1);
     })
     return(
         <div className="Expenses">
             <Card className="container">
-                <ExpenseFilter value={value1} year={year} filterbtn={filterbtn} filtercancel={filtercancel}></ExpenseFilter>
+                <ExpenseFilter value={value1} year={year}></ExpenseFilter>
                 <ExpenseList filterExpense={filterExpense}></ExpenseList>
                 
                 {/* <ExpenseItem date={user[0].d}purpose={user[0].p}rupees={user[0].r}></ExpenseItem>
